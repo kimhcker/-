@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RPN计算器文档</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>RPN计算器使用说明</h1>
+    <p>基于C++实现的逆波兰表示法计算器</p>
+    
+    <h2>编译运行</h2>
+    <pre>g++ rpn_calc.cpp -o rpn_calc
+./rpn_calc</pre>
+    
+    <h2>使用示例</h2>
+    <ul>
+        <li><code>5 5 +</code> → 10</li>
+        <li><code>2 3 ^</code> → 8</li>
+        <li><code>9 sqrt</code> → 3</li>
+        <li><code>5 fib</code> → 5</li>
+    </ul>
+    
+    <h2>支持的操作</h2>
+    <ul>
+        <li>四则运算: + - * /</li>
+        <li>数学函数: ^ sqrt sin cos tan</li>
+        <li>特殊功能: fib</li>
+        <li>系统命令: help history batch q</li>
+    </ul>
+    
+    <p><em>文档生成时间: $(date)</em></p>
+</body>
+</html>
